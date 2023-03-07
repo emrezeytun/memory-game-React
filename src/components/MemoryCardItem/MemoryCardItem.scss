@@ -1,0 +1,34 @@
+.memory {
+    &-card {
+     
+        &-item {
+                cursor: pointer;
+                display: flex;
+                font-size: 20px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                background: #172939;
+                width: 80px;
+                height: 80px;
+                color: #f0f0f0;
+                margin: 8px 8px;
+                font-weight: 600;
+                transition: .5s;
+                &-closed {
+                    p {
+                        display: none;
+                    }
+                    
+                }
+                &-opened {
+                    background-color: #e49a1f;
+                    color: #fff;
+                    p {
+                        display: block;
+                    }
+                   
+                }
+        }
+    }
+}

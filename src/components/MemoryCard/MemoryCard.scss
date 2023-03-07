@@ -1,5 +1,9 @@
 .memory {
      &-card {
-       
+       display: grid;
+       grid-template-columns: auto auto auto auto;
+       background-color: #f0f0f0;
+       padding: 48px;
+       border-radius: 12px;
     }
 }

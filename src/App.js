@@ -2,7 +2,7 @@ import "./App.scss";
 import { MemoryCard } from "./components";
 function App() {
   return (
-    <div className="App">
+    <div className="memory-game">
       <MemoryCard />
     </div>
   );
