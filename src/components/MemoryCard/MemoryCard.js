@@ -82,10 +82,6 @@ export default function MemoryCard() {
     restartGame();
   }, []);
 
-  useEffect(() => {
-    console.log(clickTracking);
-  }, [clickTracking]);
-
   const shuffleArray = (array) => {
     return array
       .map((value) => ({ value, sort: Math.random() }))
