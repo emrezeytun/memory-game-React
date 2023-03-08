@@ -1,9 +1,39 @@
 .memory {
+    &-restart {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        &-btn {
+            background-color: #f0f0f0;
+            color: #172939;
+            font-weight: 700;
+            border: none;
+            padding: 12px;
+            margin-top: 12px;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+            cursor: pointer;
+        }
+    }
+    &-tracking {
+        display: flex;
+        justify-content: center;
+        p {
+            margin: 0;
+            color: #f0f0f0;
+            font-weight: 800;
+            font-size: 24px;
+        }
+    }
      &-card {
        display: grid;
        grid-template-columns: auto auto auto auto;
        background-color: #f0f0f0;
        padding: 48px;
        border-radius: 12px;
+       &-disable {
+        pointer-events: none;
+        cursor: no-drop;
+       }
     }
 }

@@ -9,7 +9,7 @@ export default function MemoryCardItem({ item, handleClick }) {
         item.isOpened ? "memory-card-item-opened" : "memory-card-item-closed"
       } ${item.isCorrect ? "memory-card-item-correct" : ""}`}
     >
-      <p>{item.number}</p>
+      {item.isOpened && <img src={item.icon} />}
     </div>
   );
 }
